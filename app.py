@@ -11,7 +11,7 @@ UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load your trained model
-model_path = r'C:\Users\Kirankumar Gangoor\OneDrive\Documents\Jupyter Notebook\Deep Learning\PlantDisease\model.h5'
+model_path = r'C:\Users\Kirankumar Gangoor\OneDrive\Documents\ML\Plant_Disease_Detection\model.h5'
 model = tf.keras.models.load_model(model_path)
 
 # Define the class names as per your dataset
