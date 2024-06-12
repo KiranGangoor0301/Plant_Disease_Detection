@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Plant Disease Classification</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Plant Disease Classification</h1>
+    <div class="card">
+      <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="file">Upload an image of the plant:</label>
+          <input type="file" class="form-control" id="file" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload and Predict</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

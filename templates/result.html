@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .result-image {
+      max-width: 60%;
+      height: auto;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Prediction Result</h1>
+    <div class="card text-center">
+      <img src="{{ url_for('display_image', filename=filename) }}" class="img-fluid result-image" alt="Plant Image">
+      <h2 class="mt-4">Predicted Class: {{ predicted_class }}</h2>
+      <h3>Confidence: {{ confidence }}%</h3>
+      <a href="/" class="btn btn-primary mt-4">Try Another Image</a>
+    </div>
+  </div>
+</body>
+</html>
